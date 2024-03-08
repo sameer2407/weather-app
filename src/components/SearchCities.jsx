@@ -36,10 +36,6 @@ const SearchCities = ({ latCity, longCity, update }) => {
     }
   };
 
-  const handleCurrentLocationClick = () => {
-    update(latCity, longCity);
-  };
-
   return (
     <>
       <AsyncPaginate
