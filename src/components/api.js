@@ -1,5 +1,3 @@
-var apiKey2 = process.env.REACT_APP_LOCATION_API_KEY;
-
 export const geoApiOptions = {
   method: "GET",
   headers: {
