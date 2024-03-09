@@ -5,7 +5,7 @@ import { CiLocationOn } from "react-icons/ci";
 import SearchCities from "./SearchCities";
 import { ColorRing } from "react-loader-spinner";
 
-const apiKey = process.env.REACT_APP_WEATHER_API_KEY;
+const apiKey = process.env.WEATHER_API;
 const DisplayFetch = ({
   latitude,
   longitude,
@@ -32,7 +32,7 @@ const DisplayFetch = ({
   const fetchData = async () => {
     try {
       const response = await fetch(
-        `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=metric&appid=f728ced33a32bce98c93a5e36a508c94`
+        `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=metric&appid=${apiKey}`
       );
 
       if (!response.ok) {
